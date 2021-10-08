@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import addToMailchimp from "gatsby-plugin-mailchimp";
+import { Flex } from "rebass";
+import styled from "styled-components";
+
+const Container = styled.div`
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: pink;
+`;
 
 export const MailingList = () => {
   const [email, setEmail] = useState("");
@@ -26,15 +34,21 @@ export const MailingList = () => {
   };
 
   return (
-    <form onSubmit={() => handleSubmit(email)}>
-      <label htmlFor="email">Email address:</label>
-      <input
-        id="email"
-        name="email"
-        placeholder="pink@flamingo.com"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <button type="submit">Submit</button>
-    </form>
+    <Container>
+      <form onSubmit={() => handleSubmit(email)}>
+        <label htmlFor="email">
+          Feel free to join our mailing list. No pressure, though.
+        </label>
+        <Flex mt="2">
+          <input
+            id="email"
+            name="email"
+            placeholder="pink@flamingo.com"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button type="submit">Submit</button>
+        </Flex>
+      </form>
+    </Container>
   );
 };
