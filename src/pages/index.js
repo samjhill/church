@@ -16,7 +16,6 @@ const pageStyles = {
 // `;
 
 const AnimatedFlamingo = styled(FlamingoSvg)`
-  
 `; // animation: ${colorShift} 3s infinite;
 
 // markup
