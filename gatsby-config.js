@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/church",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Church of the Sacred Rose-Colored Flame",
