@@ -2,6 +2,7 @@ import * as React from "react"
 import FlamingoSvg from "../components/flamingo-god";
 import { Box, Flex } from "rebass";
 import styled, { keyframes } from "styled-components";
+import { MailingList } from "../components/mailing-list";
 
 // styles
 const pageStyles = {
@@ -23,10 +24,13 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>Church of the Sacred Rose-Colored Flame</title>
+      
       <Box>
         <h1>Church of the Sacred Rose-Colored Flame</h1>
+        <p>Come for the flock, stay for the talk.</p>
       </Box>
       <Flex>
+      <MailingList />
       <AnimatedFlamingo />
       </Flex>
     </main>

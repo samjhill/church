@@ -23,5 +23,12 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+        resolve: 'gatsby-plugin-mailchimp',
+        options: {
+            endpoint: 'https://flamingochurch.us5.list-manage.com/subscribe/post?u=6ebe0b4af973c20b095e1eb03&amp;id=f896297f9e', 
+            timeout: 3500,
+        },
+    },
   ],
 };
