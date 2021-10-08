@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/church/public",
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.flamingochurch.org",
     title: "Church of the Sacred Rose-Colored Flame",
   },
   plugins: [
