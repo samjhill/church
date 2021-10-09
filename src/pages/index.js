@@ -15,7 +15,7 @@ const PageStyles = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
   max-width: 800px;
 `;
 
@@ -99,7 +99,7 @@ const IndexPage = () => {
             scope is infinite, and our work together will help the world.
           </Text>
         </Box>
-        
+
         <SocialLinks />
 
         <MailingList />
