@@ -1,15 +1,17 @@
 import * as React from "react";
 import FlamingoSvg from "../components/flamingo-god";
-import { Box, Flex, Text } from "rebass";
+import { Box, Text } from "rebass";
 import styled, { keyframes } from "styled-components";
 import { MailingList } from "../components/mailing-list";
+import { SocialLinks } from "../components/social-links";
 import "@fontsource/open-sans"; 
+import "../styles/global.css";
 
 // styles
 const PageStyles = styled.div`
-  color: "#232129";
-  padding: "1rem";
-  font-family: "Open Sans";
+  background-color: #222121;
+  color: #efeded;
+  padding: 1rem;
 `;
 
 const ContentWrapper = styled.div`
@@ -27,9 +29,11 @@ const AnimatedFlamingo = styled(FlamingoSvg)`
   animation-direction: alternate;
   width: 100%;
   height: 100%;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 `;
 
-// markup
+
 const IndexPage = () => {
   return (
     <PageStyles>
@@ -66,7 +70,7 @@ const IndexPage = () => {
                 href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-brain-gut-connection"
                 target="_blank"
               >
-                a real thing
+                a real thing{" "}
               </a>
               - we teach and learn about ways to be able to attune this sense.
             </li>
@@ -95,6 +99,8 @@ const IndexPage = () => {
             scope is infinite, and our work together will help the world.
           </Text>
         </Box>
+        
+        <SocialLinks />
 
         <MailingList />
       </ContentWrapper>
