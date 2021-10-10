@@ -19,6 +19,10 @@ const ContentWrapper = styled.div`
   max-width: 800px;
 `;
 
+const Section = styled.div`
+  margin-bottom: 2rem;
+`;
+
 const colorShift = keyframes`
   0% { fill: pink; }
   100% { fill: #fc8eac; }
@@ -40,26 +44,28 @@ const IndexPage = () => {
       <ContentWrapper>
         <title>Church of the Sacred Rose-Colored Flame</title>
 
-        <Box>
+        <Section>
           <h1>Church of the Sacred Rose-Colored Flame</h1>
-          <Text>Come for the flock, stay for the talk.</Text>
-        </Box>
+          <Text as="h2" fontStyle="italic">
+            Come for the flock, stay for the talk.
+          </Text>
+        </Section>
 
-        <Box>
+        <Section>
           <h3>About</h3>
           <Text>We're a church that anyone can join.</Text>
           <Text>Our goal is to increase empathy, love, and serenity.</Text>
-        </Box>
+        </Section>
 
-        <Box>
+        <Section>
           <h3>What do we do?</h3>
           <Text>
             We promote acceptance, teach strategies to deal with a hectic and
             divided world, and foster community.
           </Text>
-        </Box>
+        </Section>
 
-        <Box>
+        <Section>
           <h3>What do we believe?</h3>
           <ul>
             <li>All people deserve love, respect, and acceptance.</li>
@@ -75,9 +81,9 @@ const IndexPage = () => {
               - we teach and learn about ways to be able to attune this sense.
             </li>
           </ul>
-        </Box>
+        </Section>
 
-        <Box>
+        <Section>
           <h3>How did this come about?</h3>
           <Text>
             On two occasions, our founder saw a vision: a powerful and calm
@@ -98,7 +104,7 @@ const IndexPage = () => {
             encounters. The beliefs listed above are just the beginning. Our
             scope is infinite, and our work together will help the world.
           </Text>
-        </Box>
+        </Section>
 
         <SocialLinks />
 

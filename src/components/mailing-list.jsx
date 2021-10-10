@@ -11,11 +11,14 @@ const Container = styled.div`
 const OutlineButton = styled.button`
   background: none;
   border: 2px solid pink;
-  color: white;
   margin-left: auto;
   padding: 1rem;
-  :hover{
+  color: pink;
+  transition: background .5s;
+  :hover {
     cursor: pointer;
+    background: pink;
+    color: #222121;
   }
 `;
 
