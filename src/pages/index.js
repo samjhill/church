@@ -4,7 +4,7 @@ import { Box, Text } from "rebass";
 import styled, { keyframes } from "styled-components";
 import { MailingList } from "../components/mailing-list";
 import { SocialLinks } from "../components/social-links";
-import "@fontsource/open-sans"; 
+import "@fontsource/open-sans";
 import "../styles/global.css";
 
 // styles
@@ -36,7 +36,6 @@ const AnimatedFlamingo = styled(FlamingoSvg)`
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 `;
-
 
 const IndexPage = () => {
   return (
@@ -80,29 +79,72 @@ const IndexPage = () => {
               </a>
               - we teach and learn about ways to be able to attune this sense.
             </li>
+            <li>
+              Energy and stress management can have a positive impact on
+              longevity and health.
+            </li>
           </ul>
         </Section>
 
         <Section>
           <h3>How did this come about?</h3>
           <Text>
-            On two occasions, our founder saw a vision: a powerful and calm
-            being, similar in looks to a Flamingo.{" "}
+            On two occasions, The Oracle saw a vision: a powerful and calm
+            being, similar in looks to a Flamingo. However, there were a few key
+            differences:
           </Text>
           <ul>
-            <li>One great eye in the middle of its forehead.</li>
+            <li>One great eye in the middle of her forehead.</li>
             <li>Three bare human breasts.</li>
             <li>Six strong wings.</li>
             <li>Nine long legs, all pointing in different directions.</li>
           </ul>
 
           <AnimatedFlamingo />
+        </Section>
 
-          <Text>
-            This being did not speak, but its presence was overwhelming. The
-            founder is still in the process of decoding the purpose of the
-            encounters. The beliefs listed above are just the beginning. Our
-            scope is infinite, and our work together will help the world.
+        <Section>
+          <h3>So, you all worship a Lovecraftian-Flamingo god-monster?</h3>
+          <Text mb="2">Well, no.</Text>
+          <Text mb="2">
+            In her appearance to The Oracle, the being was silent, but conveyed
+            a complex message. One of the first things that message contained is
+            that all religions are like the faces of a many-sided die. Where
+            we're born, societal norms, and other factors we can't control have
+            such a huge weight in our religious lives that it does seem like a
+            roll of the dice as to which religion we choose.
+          </Text>
+          <Text mb="2">
+            Even agnosticism, atheism, and scientism are faces of this same die.
+          </Text>
+          <Text mb="2">
+            The point is: use your spiritual energy how you want, as long as you
+            respect the beliefs listed above.
+          </Text>
+        </Section>
+
+        <Section>
+          <h3>But why a flamingo, though?</h3>
+          <Text mb="2">
+            The visual appearance is a message; these types of beings can appear
+            in any number of forms. The Oracle is still decoding this message.
+          </Text>
+          <Text mb="2">
+            Note the nine feet: all pointing in different directions. The being
+            is calm and still, but is able to shift direction at any time.
+          </Text>
+          <Text mb="2">
+            The six wings enable this massive being to fly. Each
+            pair individually is strong, but together, they can lift us all up.
+          </Text>
+          <Text mb="2">
+            Next, the three breasts symbolize a wealth of energy that is
+            perfectly designed for us.
+          </Text>
+          <Text mb="2">
+            Finally, the third eye on her forehead: our intentions are clear.
+            Even if our actions fall short, she knows that we are like grains of
+            sand, tossed along the beach by a blustering wind.
           </Text>
         </Section>
 
