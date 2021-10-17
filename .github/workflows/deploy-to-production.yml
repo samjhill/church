@@ -28,4 +28,5 @@ jobs:
     - run: npm i -g gatsby-cli
     - run: gatsby build --prefix-paths
     - run: cp ./src/CNAME public/
+    - run: npm i -g gh-pages
     - run: gh-pages -d public -r https://${{secrets.GH_TOKEN}}@github.com/samjhill/church.git
