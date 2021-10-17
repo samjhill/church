@@ -1,6 +1,7 @@
 import * as React from "react";
-import FlamingoSvg from "../components/flamingo-god";
-import { Box, Text } from "rebass";
+import FlamingoSvg from "../components/svg/flamingo-god";
+import FlamingoHeadTurnedLeft from "../components/svg/flamingod";
+import { Text } from "rebass";
 import styled, { keyframes } from "styled-components";
 import { MailingList } from "../components/mailing-list";
 import { SocialLinks } from "../components/social-links";
@@ -37,10 +38,21 @@ const AnimatedFlamingo = styled(FlamingoSvg)`
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 `;
 
+const StyledHeadTurnedLeft = styled(FlamingoHeadTurnedLeft)`
+  animation: ${colorShift} 3s infinite;
+  animation-direction: alternate;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+`;
+
+
 const IndexPage = () => {
   return (
     <PageStyles>
       <ContentWrapper>
+        <StyledHeadTurnedLeft />
         <title>Church of the Sacred Rose-Colored Flame</title>
 
         <Section>
@@ -134,8 +146,8 @@ const IndexPage = () => {
             is calm and still, but is able to shift direction at any time.
           </Text>
           <Text mb="2">
-            The six wings enable this massive being to fly. Each
-            pair individually is strong, but together, they can lift us all up.
+            The six wings enable this massive being to fly. Each pair
+            individually is strong, but together, they can lift us all up.
           </Text>
           <Text mb="2">
             Next, the three breasts symbolize a wealth of energy that is
