@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/church/public",
   siteMetadata: {
     siteUrl: "https://www.flamingochurch.org",
     title: "Church of the Sacred Rose-Colored Flame",
@@ -8,16 +7,6 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-        name: "Flamingo Church",
-        short_name: `Church`,
-        start_url: `/`,
-        display: `standalone`,
-      },
-    },
     "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",

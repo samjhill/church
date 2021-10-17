@@ -26,7 +26,7 @@ jobs:
           ${{ runner.os }}-
     - run: npm install
     - run: npm i -g gatsby-cli
-    - run: gatsby build --prefix-paths
+    - run: gatsby build
     - run: cp ./src/CNAME public/
     - run: npm i -g gh-pages
     - run: git config --global user.email "samuhill@gmail.com"
