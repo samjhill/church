@@ -25,4 +25,6 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
     - run: npm install
-    - run: npm run deploy
+    - run: gatsby build --prefix-paths
+    - run: cp ./src/CNAME public/
+    - run: gh-pages -d public -r https://${{secrets.GH_TOKEN}}@github.com/samjhill/church.git
