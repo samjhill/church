@@ -29,4 +29,6 @@ jobs:
     - run: gatsby build --prefix-paths
     - run: cp ./src/CNAME public/
     - run: npm i -g gh-pages
+    - run: git config --global user.email "samuhill@gmail.com"
+    - run: git config --global user.name "Sam J Hill"
     - run: gh-pages -d public -r https://${{secrets.GH_TOKEN}}@github.com/samjhill/church.git
